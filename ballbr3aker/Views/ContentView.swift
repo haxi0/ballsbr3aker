@@ -107,7 +107,7 @@ struct ContentView: View {
     }
     
     private func isSupportedVersion() -> Bool {
-        if #available(iOS 16.4, *) {
+        if #available(iOS 16.4.1, *) {
             return true
         } else {
             return false
