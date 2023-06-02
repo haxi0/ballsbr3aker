@@ -11,14 +11,21 @@
 		6DFA97F52A29317300C69EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA97F42A29317300C69EC6 /* ContentView.swift */; };
 		6DFA97F72A29317500C69EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFA97F62A29317500C69EC6 /* Assets.xcassets */; };
 		6DFA97FA2A29317500C69EC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFA97F92A29317500C69EC6 /* Preview Assets.xcassets */; };
+		6DFA98082A2A10E100C69EC6 /* POC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA98072A2A10E100C69EC6 /* POC.m */; };
+		6DFA980B2A2A130300C69EC6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFA980A2A2A130300C69EC6 /* IOKit.framework */; };
+		6DFA980D2A2A13B100C69EC6 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFA980C2A2A13B100C69EC6 /* CreditsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6DFA97EF2A29317300C69EC6 /* ballbr3aker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ballbr3aker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFA97EF2A29317300C69EC6 /* ballsbr3aker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ballsbr3aker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFA97F22A29317300C69EC6 /* ballbr3akerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ballbr3akerApp.swift; sourceTree = "<group>"; };
 		6DFA97F42A29317300C69EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6DFA97F62A29317500C69EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DFA97F92A29317500C69EC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6DFA98062A2A10E100C69EC6 /* ballbr3aker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ballbr3aker-Bridging-Header.h"; sourceTree = "<group>"; };
+		6DFA98072A2A10E100C69EC6 /* POC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POC.m; sourceTree = "<group>"; };
+		6DFA980A2A2A130300C69EC6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		6DFA980C2A2A13B100C69EC6 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DFA980B2A2A130300C69EC6 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,13 +45,14 @@
 			children = (
 				6DFA97F12A29317300C69EC6 /* ballbr3aker */,
 				6DFA97F02A29317300C69EC6 /* Products */,
+				6DFA98092A2A130300C69EC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6DFA97F02A29317300C69EC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DFA97EF2A29317300C69EC6 /* ballbr3aker.app */,
+				6DFA97EF2A29317300C69EC6 /* ballsbr3aker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +60,9 @@
 		6DFA97F12A29317300C69EC6 /* ballbr3aker */ = {
 			isa = PBXGroup;
 			children = (
+				6DFA98052A2A10CF00C69EC6 /* jelbrek */,
+				6DFA98002A29323800C69EC6 /* Views */,
 				6DFA97F22A29317300C69EC6 /* ballbr3akerApp.swift */,
-				6DFA97F42A29317300C69EC6 /* ContentView.swift */,
 				6DFA97F62A29317500C69EC6 /* Assets.xcassets */,
 				6DFA97F82A29317500C69EC6 /* Preview Content */,
 			);
@@ -67,12 +77,38 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6DFA98002A29323800C69EC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DFA97F42A29317300C69EC6 /* ContentView.swift */,
+				6DFA980C2A2A13B100C69EC6 /* CreditsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DFA98052A2A10CF00C69EC6 /* jelbrek */ = {
+			isa = PBXGroup;
+			children = (
+				6DFA98072A2A10E100C69EC6 /* POC.m */,
+				6DFA98062A2A10E100C69EC6 /* ballbr3aker-Bridging-Header.h */,
+			);
+			path = jelbrek;
+			sourceTree = "<group>";
+		};
+		6DFA98092A2A130300C69EC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DFA980A2A2A130300C69EC6 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6DFA97EE2A29317300C69EC6 /* ballbr3aker */ = {
+		6DFA97EE2A29317300C69EC6 /* ballsbr3aker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DFA97FD2A29317500C69EC6 /* Build configuration list for PBXNativeTarget "ballbr3aker" */;
+			buildConfigurationList = 6DFA97FD2A29317500C69EC6 /* Build configuration list for PBXNativeTarget "ballsbr3aker" */;
 			buildPhases = (
 				6DFA97EB2A29317300C69EC6 /* Sources */,
 				6DFA97EC2A29317300C69EC6 /* Frameworks */,
@@ -82,9 +118,9 @@
 			);
 			dependencies = (
 			);
-			name = ballbr3aker;
+			name = ballsbr3aker;
 			productName = ballbr3aker;
-			productReference = 6DFA97EF2A29317300C69EC6 /* ballbr3aker.app */;
+			productReference = 6DFA97EF2A29317300C69EC6 /* ballsbr3aker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,10 +135,11 @@
 				TargetAttributes = {
 					6DFA97EE2A29317300C69EC6 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
-			buildConfigurationList = 6DFA97EA2A29317300C69EC6 /* Build configuration list for PBXProject "ballbr3aker" */;
+			buildConfigurationList = 6DFA97EA2A29317300C69EC6 /* Build configuration list for PBXProject "ballsbr3aker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DFA97EE2A29317300C69EC6 /* ballbr3aker */,
+				6DFA97EE2A29317300C69EC6 /* ballsbr3aker */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DFA98082A2A10E100C69EC6 /* POC.m in Sources */,
+				6DFA980D2A2A13B100C69EC6 /* CreditsView.swift in Sources */,
 				6DFA97F52A29317300C69EC6 /* ContentView.swift in Sources */,
 				6DFA97F32A29317300C69EC6 /* ballbr3akerApp.swift in Sources */,
 			);
@@ -264,16 +303,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ballbr3aker/Preview Content\"";
+				DEVELOPMENT_TEAM = HD373A4P3H;
 				ENABLE_PREVIEWS = YES;
+				GCC_INPUT_FILETYPE = automatic;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -281,7 +324,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.haxi0.ballbr3aker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ballbr3aker/jelbrek/ballbr3aker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -292,16 +340,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ballbr3aker/Preview Content\"";
+				DEVELOPMENT_TEAM = HD373A4P3H;
 				ENABLE_PREVIEWS = YES;
+				GCC_INPUT_FILETYPE = automatic;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +361,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.haxi0.ballbr3aker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ballbr3aker/jelbrek/ballbr3aker-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6DFA97EA2A29317300C69EC6 /* Build configuration list for PBXProject "ballbr3aker" */ = {
+		6DFA97EA2A29317300C69EC6 /* Build configuration list for PBXProject "ballsbr3aker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DFA97FB2A29317500C69EC6 /* Debug */,
@@ -327,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DFA97FD2A29317500C69EC6 /* Build configuration list for PBXNativeTarget "ballbr3aker" */ = {
+		6DFA97FD2A29317500C69EC6 /* Build configuration list for PBXNativeTarget "ballsbr3aker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DFA97FE2A29317500C69EC6 /* Debug */,
